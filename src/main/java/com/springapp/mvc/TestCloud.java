@@ -17,6 +17,8 @@ public class TestCloud {
   public void init() throws Exception {
     System.out.println("Initialization of the H2oCloud");
     Boot.main(TestCloud.class, new String[]{});
+    H2O.waitForCloudSize(1);
+
     System.out.println("H2oCloud initialized");
     System.out.println("Proceeding with loading data to the cloud ... ");
     File file1 = new File(this.getClass().getClassLoader().getResource("cars.csv").toURI());
@@ -33,7 +35,7 @@ public class TestCloud {
 }
 
 
-//
+
 //// VERSION 2
 //public class TestCloud {
 //
