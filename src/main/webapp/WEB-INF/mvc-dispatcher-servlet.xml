@@ -12,6 +12,7 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <bean class="com.springapp.mvc.TestCloud" init-method="init"/>
 
+    <bean class="com.springapp.mvc.TestCloud" init-method="init"/>
+    <!--<bean class="com.springapp.mvc.HelloController" init-method="init"/>-->
 </beans>
